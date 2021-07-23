@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+  
+<script type="text/javascript">
+
+let user = [];
+
+//prompting user information by looping throughb   
+for (let i = 0; i < 2; i++) {
+    console.log("Please enter the user details " + i)
+user.push({
+        name: prompt("Please enter your Name: "),
+        surname: prompt("Please enter your Surname: "),
+        gender: prompt("Please enter your Gender: "),
+        age: Number(prompt("Please enter your Age: "))
+    });
+}
+
+document.write("\n Name\t" + "|" + "Surname\t" + "|" + "Gender\t" + "|" + "Age");
+
+for (let i=0; i<user.length; i++) {
+document.write(user.name + " : " +  user.surname + " : " + user.gender + " : ", user.age  );
+document.log(user);
+}
+
+</script>
+
+    </body>
+
+</html>
